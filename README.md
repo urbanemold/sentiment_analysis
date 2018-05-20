@@ -16,4 +16,8 @@ in alternativa:
 
 3-graph_drawing (disegno del grafico)
 
+Informativo:
+i tweet restituiti sono inerenti il termine di ricerca "trump", il quale può essere cambiato nello script  "tweeter_income"
+
 NB: il modulo che gestisce la API di twitter non dovrebbe essere continuamente chiuso e riaperto, in quanto twitter fornisce una stream-API quindi pensata per restare attiva e quindi, se le connessioni sono ripetute, si verrà bloccati da twitter.
+
