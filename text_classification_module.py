@@ -35,10 +35,10 @@ short_negative = open("short_reviews/negative.txt","r").read()
 
 allowed_word_types = ["J"] #adjective allowed
 all_words = []
-document = []
+documents = []
 for p in short_positive.split('\n'):
     documents.append((p,"positive"))
-    words = word.tokenize(p)
+    words = word_tokenize(p)
     pos = nltk.pos_tag(words)
     for w in pos:
         if w[1][0] in allowed_word_types:
@@ -46,7 +46,7 @@ for p in short_positive.split('\n'):
 
 for p in short_negative.split('\n'):
     documents.append((p,"negative"))
-    words = word.tokenize(p)
+    words = word_tokenize(p)
     pos = nltk.pos_tag(words)
     for w in pos:
         if w[1][0] in allowed_word_types:
