@@ -18,11 +18,11 @@ def animate(i):
     y=0
 
     for l in lines:
-        x++
+        x+=1
         if "pos" in l:
-            y+=0.4
+            y+=1.2
         elif "neg" in l:
-            y-=0.4
+            y-=0.3
         xarray.append(x)
         yarray.append(y)
 ax1.clear()
