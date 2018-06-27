@@ -2,7 +2,7 @@ import nltk
 import random
 from nltk.classify.scikitlearn import SklearnClassifier
 import pickle
-from sklearn.naive_bayes import MultinomialNB, BernoulliNB
+import sklearn.naive_bayes 
 from nltk.classify import ClassifierI
 from statistics import mode
 from nltk.tokenize import word_tokenize
