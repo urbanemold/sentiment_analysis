@@ -19,8 +19,8 @@ class listener(StreamListener):
             all_data = json.loads(data)
             tweet = all_data["text"]
             print(tweet)
-            sentiment_value, confidence = s.sentiment(tweet)
-            print(tweet,sentiment_value,confidence)
+            sentiment_value = s.sentiment(tweet)
+            print(tweet,sentiment_value)
 
             if confidence*100 >= 80:
                 output = open("twitter_output.txt","a")
